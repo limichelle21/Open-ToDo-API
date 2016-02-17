@@ -1,6 +1,6 @@
 include Faker
 # require "random_data"
-# include RandomData
+include RandomData
 
 10.times do 
 	user = User.create!(
@@ -26,7 +26,7 @@ lists = List.all
 15.times do 
 	Item.create!(
 		item: Faker::Lorem.sentence,
-		completed: true,
+		completed: RandomData.random_boolean,
 		list: lists.sample
 		)
 end
