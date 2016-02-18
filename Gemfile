@@ -36,6 +36,8 @@ gem 'figaro'
 
 gem 'pry'
 
+gem 'devise'
+
 gem 'active_model_serializers'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
