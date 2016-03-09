@@ -4,6 +4,6 @@ class Item < ActiveRecord::Base
 
 	validates :item, presence: :true
 	validates :completed, :inclusion => {:in => [true, false]}
-	validates :list, presence: :true
+	# validates :list, presence: :true
 
 end

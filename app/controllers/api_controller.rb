@@ -10,6 +10,7 @@ private
 				@current_user.valid_password?(password)
 			rescue
 				render json: {success: false, message: "Authentication Failed"}, status: 401
+			end
 		end
 	end
 end
