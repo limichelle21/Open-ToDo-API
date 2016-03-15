@@ -1,6 +1,11 @@
 class Api::ListsController < ApiController
 	before_action :authenticated?
 
+	def index
+		lists = current_user.lists
+		render json: lists
+	end
+
 	def create
 		list = current_user.lists.build(list_params)
 		if list.save
